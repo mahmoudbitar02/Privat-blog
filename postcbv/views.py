@@ -19,3 +19,14 @@ class PostCreate(CreateView):
     success_url = "/blog"
 
 
+class PostUpdate(UpdateView):
+    model = Post
+    fields = ["title","content","image"]
+    success_url = "/blog"
+
+class PostDeleet(DeleteView):
+    model = Post
+    success_url = "/blog"
+
+
+
