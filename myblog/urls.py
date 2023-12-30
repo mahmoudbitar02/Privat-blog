@@ -22,6 +22,7 @@ from django.conf.urls.static import static
 
 from postcbv.views import PostList, PostDetail, PostCreate, PostUpdate, PostDeleet
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('summernote/', include('django_summernote.urls')),
@@ -36,6 +37,8 @@ urlpatterns = [
     #path("blog/<int:id>" , post_detail),
     #path("blog/<int:id>/edit", edit_post),
     #path("blog/<int:id>/delete", delete_post)
+
+
 ]
 
 

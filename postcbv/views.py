@@ -30,3 +30,9 @@ class PostDeleet(DeleteView):
 
 
 
+
+
+
+
+
+
