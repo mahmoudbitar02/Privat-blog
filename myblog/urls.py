@@ -21,11 +21,13 @@ from django.conf.urls.static import static
 from posts.views import post_list, post_detail, create_post, edit_post, delete_post
 
 #from postcbv.views import PostList, PostDetail, PostCreate, PostUpdate, PostDeleet
-
+from about.views import home
 
 urlpatterns = [
+
     path('admin/', admin.site.urls),
     path('summernote/', include('django_summernote.urls')),
+    path('',home),
 
     #path("blog/", PostList.as_view()),
     #path("blog/<int:pk>" , PostDetail.as_view()),
