@@ -12,6 +12,8 @@ class About(models.Model):
     lives_in = models.CharField(max_length=80)
     age = models.IntegerField()
     gender = models.CharField(max_length=15)
+    cv = models.FileField(upload_to='cv', help_text='upload your cv')
+
     def __str__(self):
         return self.name
 
