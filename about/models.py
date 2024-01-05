@@ -32,22 +32,26 @@ class Education(models.Model):
     year = models.IntegerField()
     title = models.CharField(max_length=100)
     place = models.CharField(max_length=50)
-    description = models.CharField(max_length=300)
-    last = models.BooleanField(default=False)
+    description = models.CharField(max_length=300) 
 
     def __str__(self):
         return self.title
+
+    class Meta:
+        ordering = ('-year',)
 
 class Experience(models.Model):
     year = models.IntegerField()
     title = models.CharField(max_length=100)
     place = models.CharField(max_length=50)
     description = models.CharField(max_length=300)
-    last = models.BooleanField(default=False)
-
 
     def __str__(self):
         return self.title
+
+    class Meta:
+        ordering = ('-year',)
+
 
 class Service(models.Model):
     icon = models.CharField(max_length=30)
